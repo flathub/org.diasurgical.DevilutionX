@@ -1,0 +1,13 @@
+diff --git a/Packaging/nix/devilutionx.metainfo.xml b/Packaging/nix/devilutionx.metainfo.xml
+index 20d820e63..508e2df9b 100644
+--- a/Packaging/nix/devilutionx.metainfo.xml
++++ b/Packaging/nix/devilutionx.metainfo.xml
+@@ -64,7 +64,7 @@
+ 		</screenshot>
+ 	</screenshots>
+ 	<releases>
+-		<release version="1.5.1" date="2023-xx-xx">
++		<release version="1.5.1" date="2023-09-02">
+ 			<description>
+ 				<p>This is a primarily bugfix release, which includes the following updates:</p>
+ 				<ul>
