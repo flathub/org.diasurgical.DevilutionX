@@ -5,13 +5,13 @@ Subject: [PATCH] Remove offending line
 
 It isn't even relevant to flatpak anyway
 ---
- Packaging/nix/devilutionx.metainfo.xml | 1 -
+ devilutionX/Packaging/nix/devilutionx.metainfo.xml | 1 -
  1 file changed, 1 deletion(-)
 
-diff --git a/Packaging/nix/devilutionx.metainfo.xml b/Packaging/nix/devilutionx.metainfo.xml
+diff --git a/devilutionX/Packaging/nix/devilutionx.metainfo.xml b/devilutionX/Packaging/nix/devilutionx.metainfo.xml
 index badf15f5f..ca8341011 100644
---- a/Packaging/nix/devilutionx.metainfo.xml
-+++ b/Packaging/nix/devilutionx.metainfo.xml
+--- a/devilutionX/Packaging/nix/devilutionx.metainfo.xml
++++ b/devilutionX/Packaging/nix/devilutionx.metainfo.xml
 @@ -72,7 +72,6 @@
  					<li>Improve rendering of Chinese/Japanese/Korean texts</li>
  					<li>Fix Hellfire items not saving their identified state</li>
