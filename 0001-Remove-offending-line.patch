@@ -1,3 +1,13 @@
+From 5de32a1a282e64809d699cb0c9030bb7896add58 Mon Sep 17 00:00:00 2001
+From: Oleksandr Kalko <tsunami.wave@ukr.net>
+Date: Mon, 5 Feb 2024 14:25:54 +0200
+Subject: [PATCH] Remove offending line
+
+It isn't even relevant to flatpak anyway
+---
+ Packaging/nix/devilutionx.metainfo.xml | 1 -
+ 1 file changed, 1 deletion(-)
+
 diff --git a/Packaging/nix/devilutionx.metainfo.xml b/Packaging/nix/devilutionx.metainfo.xml
 index badf15f5f..ca8341011 100644
 --- a/Packaging/nix/devilutionx.metainfo.xml
@@ -10,3 +20,6 @@ index badf15f5f..ca8341011 100644
  				</ul>
  				<p>Please visit the full changelog for more detailed notes</p>
  			</description>
+-- 
+2.43.0.windows.1
+

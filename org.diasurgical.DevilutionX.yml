@@ -26,7 +26,7 @@ modules:
           url: https://github.com/diasurgical/devilutionX/releases/download/1.5.2/devilutionx-src-fully-vendored.tar.xz
           sha256: 0e554fa3c69f77711152135df535ac984aa98ff88d9b631ba80dd96a4859bebb
         - type: patch
-          path: fix-metainfo-1.5.2.patch
+          path: 0001-Remove-offending-line.patch
           use-git: true
         # CJK fonts
         - type: file
