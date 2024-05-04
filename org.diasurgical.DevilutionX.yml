@@ -10,8 +10,8 @@ rename-icon: devilutionx
 finish-args:
     - --socket=fallback-x11
     - --socket=wayland
-    # Required for controllers to work
-    - --device=all
+    - --device=dri
+    - --device=input
     - --share=network
     - --share=ipc
     - --socket=pulseaudio
