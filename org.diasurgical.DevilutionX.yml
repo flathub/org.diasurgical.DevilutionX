@@ -23,10 +23,10 @@ modules:
         - -DCMAKE_BUILD_TYPE=Release
       sources:
         - type: archive
-          url: https://github.com/diasurgical/devilutionX/releases/download/1.5.2/devilutionx-src-fully-vendored.tar.xz
-          sha256: 0e554fa3c69f77711152135df535ac984aa98ff88d9b631ba80dd96a4859bebb
+          url: https://github.com/diasurgical/devilutionX/releases/download/1.5.3/devilutionx-src-fully-vendored.tar.xz
+          sha256: 72eeab4d2748e419ab94db852aece51d4963c74096be18973d543f0dbcd6feac
         - type: patch
-          path: fix-metainfo-1.5.2.patch
+          path: fix-metainfo-1.5.3.patch
           options:
             - --binary
         # CJK fonts
