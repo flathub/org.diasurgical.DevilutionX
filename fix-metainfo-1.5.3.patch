@@ -1,5 +1,5 @@
 diff --git a/Packaging/nix/devilutionx.metainfo.xml b/Packaging/nix/devilutionx.metainfo.xml
-index badf15f5f..03a4bfce8 100644
+index 36e079a9c..1b53d1adc 100644
 --- a/Packaging/nix/devilutionx.metainfo.xml
 +++ b/Packaging/nix/devilutionx.metainfo.xml
 @@ -2,8 +2,12 @@
@@ -32,11 +32,3 @@ index badf15f5f..03a4bfce8 100644
  		</screenshot>
  	</screenshots>
  	<releases>
-@@ -72,7 +79,6 @@
- 					<li>Improve rendering of Chinese/Japanese/Korean texts</li>
- 					<li>Fix Hellfire items not saving their identified state</li>
- 					<li>Fix stash corrupting when converting a hero between Diablo and Hellfire</li>
--					<li>Release is now built on Ubuntu 22.04.<br>Warning: This may cause DevilutionX to fail launch on systems with older <b>glibc</b> versions!</li>
- 				</ul>
- 				<p>Please visit the full changelog for more detailed notes</p>
- 			</description>
