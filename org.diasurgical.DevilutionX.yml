@@ -1,6 +1,6 @@
 app-id: org.diasurgical.DevilutionX
 runtime: org.freedesktop.Platform
-runtime-version: '24.08'
+runtime-version: "24.08"
 sdk: org.freedesktop.Sdk
 command: devilutionx
 rename-desktop-file: devilutionx.desktop
@@ -8,40 +8,36 @@ rename-appdata-file: devilutionx.metainfo.xml
 rename-icon: devilutionx
 
 finish-args:
-    - --socket=fallback-x11
-    - --socket=wayland
-    # Required for controllers to work
-    - --device=all
-    - --share=network
-    - --share=ipc
-    - --socket=pulseaudio
+  - --socket=fallback-x11
+  - --socket=wayland
+  # Required for controllers to work
+  - --device=all
+  - --share=network
+  - --share=ipc
+  - --socket=pulseaudio
 modules:
-    - name: devilutionX
-      buildsystem: cmake-ninja
-      config-opts:
-        - -DBUILD_TESTING=OFF
-        - -DCMAKE_BUILD_TYPE=Release
-      sources:
-        - type: archive
-          url: https://github.com/diasurgical/devilutionX/releases/download/1.5.3/devilutionx-src-fully-vendored.tar.xz
-          sha256: 72eeab4d2748e419ab94db852aece51d4963c74096be18973d543f0dbcd6feac
-        - type: patch
-          path: fix-metainfo-1.5.3.patch
-          options:
-            - --binary
-        # CJK fonts
-        - type: file
-          filename: fonts.mpq
-          url: https://github.com/diasurgical/devilutionx-assets/releases/download/v4/fonts.mpq
-          sha256: 551ecee2d95b4e7807737a7794a6bacf0b4a03a91634816277b91db35ce1e259
-        # Diablo shareware demo
-        - type: file
-          filename: spawn.mpq
-          url: https://github.com/diasurgical/devilutionx-assets/releases/download/v4/spawn.mpq
-          sha256: 64427cd7c1ba904eaa2e0031c16a6b136d0ecef9abc888c5ff8344b459356e38
-      post-install:
-        - "desktop-file-edit --set-icon=org.diasurgical.DevilutionX-hellfire ${FLATPAK_DEST}/share/applications/devilutionx-hellfire.desktop"
-        - "mv ${FLATPAK_DEST}/share/applications/devilutionx-hellfire.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}-hellfire.desktop"
-        - "mv ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/devilutionx-hellfire.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}-hellfire.png"
-        - "install -Dm644 fonts.mpq -t ${FLATPAK_DEST}/share/diasurgical/devilutionx"
-        - "install -Dm644 spawn.mpq -t ${FLATPAK_DEST}/share/diasurgical/devilutionx"
+  - name: devilutionX
+    buildsystem: cmake-ninja
+    config-opts:
+      - -DBUILD_TESTING=OFF
+      - -DCMAKE_BUILD_TYPE=Release
+    sources:
+      - type: archive
+        url: https://github.com/diasurgical/devilutionX/releases/download/1.5.4/devilutionx-src-fully-vendored.tar.xz
+        sha256: 3ed0f794a21d0316b31280d9d67748345823e7efbe8ae6f10747c75e72eabc9a
+      # CJK fonts
+      - type: file
+        filename: fonts.mpq
+        url: https://github.com/diasurgical/devilutionx-assets/releases/download/v4/fonts.mpq
+        sha256: 551ecee2d95b4e7807737a7794a6bacf0b4a03a91634816277b91db35ce1e259
+      # Diablo shareware demo
+      - type: file
+        filename: spawn.mpq
+        url: https://github.com/diasurgical/devilutionx-assets/releases/download/v4/spawn.mpq
+        sha256: 64427cd7c1ba904eaa2e0031c16a6b136d0ecef9abc888c5ff8344b459356e38
+    post-install:
+      - "desktop-file-edit --set-icon=org.diasurgical.DevilutionX-hellfire ${FLATPAK_DEST}/share/applications/devilutionx-hellfire.desktop"
+      - "mv ${FLATPAK_DEST}/share/applications/devilutionx-hellfire.desktop ${FLATPAK_DEST}/share/applications/${FLATPAK_ID}-hellfire.desktop"
+      - "mv ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/devilutionx-hellfire.png ${FLATPAK_DEST}/share/icons/hicolor/512x512/apps/${FLATPAK_ID}-hellfire.png"
+      - "install -Dm644 fonts.mpq -t ${FLATPAK_DEST}/share/diasurgical/devilutionx"
+      - "install -Dm644 spawn.mpq -t ${FLATPAK_DEST}/share/diasurgical/devilutionx"
