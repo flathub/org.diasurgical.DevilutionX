@@ -25,6 +25,10 @@ modules:
       - type: archive
         url: https://github.com/diasurgical/devilutionX/releases/download/1.5.4/devilutionx-src-fully-vendored.tar.xz
         sha256: 3ed0f794a21d0316b31280d9d67748345823e7efbe8ae6f10747c75e72eabc9a
+      - type: patch
+        path: flathub-quality.patch
+        options:
+          - --binary
       # CJK fonts
       - type: file
         filename: fonts.mpq
