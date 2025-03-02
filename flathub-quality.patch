@@ -1,8 +1,8 @@
 diff --git a/Packaging/nix/devilutionx.metainfo.xml b/Packaging/nix/devilutionx.metainfo.xml
-index 6cec33f1b..236998864 100644
+index 6cec33f1b..0c607f2ce 100644
 --- a/Packaging/nix/devilutionx.metainfo.xml
 +++ b/Packaging/nix/devilutionx.metainfo.xml
-@@ -7,11 +7,16 @@
+@@ -7,10 +7,15 @@
  	</developer>
  
  	<name>DevilutionX</name>
@@ -10,13 +10,13 @@ index 6cec33f1b..236998864 100644
 +	<summary>Experience Diablo and Hellfire anew</summary>
  
  	<metadata_license>CC-BY-SA-4.0</metadata_license>
- 	<project_license>LicenseRef-proprietary</project_license>
- 
+-	<project_license>LicenseRef-proprietary</project_license>
++	<project_license>LicenseRef-scancode-sustainable-use-1.0=https://scancode-licensedb.aboutcode.org/sustainable-use-1.0.html</project_license>
++
 +	<branding>
 +		<color type="primary" scheme_preference="light">#c86666</color>
 +		<color type="primary" scheme_preference="dark">#640000</color>
 +	</branding>
-+
+ 
  	<url type="homepage">https://github.com/diasurgical/devilutionX</url>
  	<url type="bugtracker">https://github.com/diasurgical/devilutionX/issues</url>
- 	<url type="contact">https://discord.gg/devilutionx</url>
