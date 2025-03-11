@@ -19,6 +19,8 @@ modules:
   - name: devilutionX
     buildsystem: cmake-ninja
     config-opts:
+      - -S .
+      - -B build
       - -DBUILD_TESTING=OFF
       - -DCMAKE_BUILD_TYPE=Release
     sources:
