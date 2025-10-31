@@ -1,0 +1,25 @@
+diff --git a/Packaging/nix/devilutionx.metainfo.xml b/Packaging/nix/devilutionx.metainfo.xml
+index 0c607f2ce..666d14167 100644
+--- a/Packaging/nix/devilutionx.metainfo.xml
++++ b/Packaging/nix/devilutionx.metainfo.xml
+@@ -76,6 +76,20 @@
+ 		</screenshot>
+ 	</screenshots>
+ 	<releases>
++		<release version="1.5.5" date="2025-10-31">
++			<description>
++			<p>This release includes the following updates:</p>
++			<ul>
++				<li>App icon on Linux is now aligned with Android</li>
++				<li>Adjusted game speeds for Multiplayer</li>
++				<li>You can now use CTRL+ Mouse Scroll to zoom the map</li>
++				<li>Murphy Shrine has been added to Crippling Shrines</li>
++				<li>Updates to Russian and Polish translations</li>
++				<li>Crash fixes</li>
++			</ul>
++			</description>
++			<url>https://github.com/diasurgical/devilutionX/releases/tag/1.5.5</url>
++		</release>
+ 		<release version="1.5.4" date="2025-02-08">
+ 			<description>
+ 				<p>This release includes the following updates:</p>
