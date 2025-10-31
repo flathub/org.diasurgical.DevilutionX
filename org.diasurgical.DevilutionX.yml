@@ -31,12 +31,12 @@ modules:
           - --binary
       # CJK fonts
       - type: file
-        filename: fonts.mpq
+        dest-filename: fonts.mpq
         url: https://github.com/diasurgical/devilutionx-assets/releases/download/v4/fonts.mpq
         sha256: 551ecee2d95b4e7807737a7794a6bacf0b4a03a91634816277b91db35ce1e259
       # Diablo shareware demo
       - type: file
-        filename: spawn.mpq
+        dest-filename: spawn.mpq
         url: https://github.com/diasurgical/devilutionx-assets/releases/download/v4/spawn.mpq
         sha256: 64427cd7c1ba904eaa2e0031c16a6b136d0ecef9abc888c5ff8344b459356e38
     post-install:
