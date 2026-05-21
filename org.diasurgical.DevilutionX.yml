@@ -1,6 +1,6 @@
 app-id: org.diasurgical.DevilutionX
 runtime: org.freedesktop.Platform
-runtime-version: "24.08"
+runtime-version: "25.08"
 sdk: org.freedesktop.Sdk
 command: devilutionx
 rename-desktop-file: devilutionx.desktop
@@ -18,6 +18,8 @@ finish-args:
 modules:
   - name: devilutionX
     buildsystem: cmake-ninja
+    build-options:
+      cflags: -Wno-incompatible-pointer-types
     config-opts:
       - -DBUILD_TESTING=OFF
       - -DCMAKE_BUILD_TYPE=Release
